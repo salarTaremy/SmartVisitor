@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:id="@+id/tv_ServerResultID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/iransansmobile"
+        android:gravity="left"
+        android:text="ServerResultID"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/material_text_body1"
+        app:layout_constraintStart_toStartOf="@+id/img_OrderItemUpload"
+        app:layout_constraintTop_toTopOf="@+id/img_OrderItemUpload" />
+
+
+    <ImageView
+        android:id="@+id/img_OrderItemDelete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:tint="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/ic_delete1" />
+
+
+    <ImageView
+        android:id="@+id/img_OrderItemUpload"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:tint="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_upload" />
+
+    <ImageView
+        android:id="@+id/img_OrderItemEdit"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:tint="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/img_OrderItemDelete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_OrderItemUpload"
+        app:srcCompat="@mipmap/ic_edit" />
+
+    <ImageView
+        android:id="@+id/img_OrderItemLogo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/cercle_background_blue"
+        android:padding="10dp"
+        android:src="@drawable/unnamed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_OrderNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/iransansmobile"
+        android:gravity="right"
+        android:text="No"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/material_text_body1"
+        app:layout_constraintEnd_toStartOf="@+id/img_OrderItemLogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_OrderCustomerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/iransansmobile"
+        android:gravity="right"
+        android:text="CusName"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/material_text_body1"
+        app:layout_constraintEnd_toStartOf="@+id/img_OrderItemLogo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_OrderNo" />
+
+    <TextView
+        android:id="@+id/tv_OrderDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/iransansmobile"
+        android:gravity="left"
+        android:text="Date"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/material_text_body1"
+        app:layout_constraintEnd_toStartOf="@+id/tv_OrderNo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/iransansmobile"
+        android:gravity="right"
+        android:text="Description"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/material_text_body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_OrderItemLogo"
+        app:layout_constraintStart_toEndOf="@+id/img_OrderItemDelete"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PaymentType" />
+
+    <TextView
+        android:id="@+id/tv_Amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/iransansmobile"
+        android:gravity="left"
+        android:text="Amount"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/material_text_body1"
+        app:layout_constraintEnd_toStartOf="@+id/img_OrderItemLogo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_OrderCustomerName" />
+
+    <TextView
+        android:id="@+id/tv_PaymentType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/iransansmobile"
+        android:gravity="right"
+        android:text="PaymentType"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/material_text_body1"
+        app:layout_constraintEnd_toStartOf="@+id/tv_Amount"
+        app:layout_constraintTop_toBottomOf="@+id/tv_OrderCustomerName" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_OrderItemLogo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_IsSended"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_OrderItemLogo"
+        app:layout_constraintEnd_toEndOf="@+id/img_OrderItemLogo"
+        app:srcCompat="@drawable/success_gif" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.SuccessActivity">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_marginTop="160dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/success"/>
+
+    <TextView
+        android:id="@+id/tv_Success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyTextView"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/material_text_headline"
+        android:textColor="@color/green"
+        android:text="@string/Success" />
+
+    <TextView
+        android:id="@+id/tv_SuccessDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/MyTextView"
+        android:textSize="@dimen/material_text_body1"
+        android:textColor="@color/secondary_text"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:text="@string/OrderSavedsuccessful" />
+
+    <com.omega_r.libs.OmegaCenterIconButton
+        style="@style/MyButton"
+        android:id="@+id/Btn_SuccessAddOrder"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/green"
+        android:text="@string/confirm" />
+
+</LinearLayout>

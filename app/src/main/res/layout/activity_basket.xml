@@ -1,0 +1,86 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayoutBasket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayoutBasket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <include layout="@layout/fragment_collapsing_main"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_Basket_List"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/layout_animation"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/BottomSheetBasketPriceDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_peekHeight="120dp"
+        app:behavior_hideable="false"
+        android:orientation="vertical"
+        android:background="@color/Transparent"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <fragment
+            android:id="@+id/fragmentContainerBasket"
+            android:name="smart.visitor.ir.ui.Basket.BasketRlsFragment"
+            tools:layout="@layout/fragment_basket_rls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/BottomSheetContinueBasket2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_peekHeight="100dp"
+        app:behavior_hideable="false"
+        android:orientation="vertical"
+        android:background="@color/Transparent"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <com.omega_r.libs.OmegaCenterIconButton
+            android:id="@+id/BtnConfirmAndContinueBasket"
+            android:drawableLeft="@mipmap/ic_check5"
+            style="@style/MyButton"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@color/accent"
+            android:text="@string/ConfirmAndContinue" />
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_DetailBasket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="top"
+        app:layout_anchorGravity="left"
+        android:onClick="fabDetailBasket_Clickإ"
+        android:tint="@color/icons"
+        app:layout_anchor="@id/BottomSheetBasketPriceDetail"
+        app:srcCompat="@mipmap/ic_edit" />
+    <!-- layout_gravity Default is : center -->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

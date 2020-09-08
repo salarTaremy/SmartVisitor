@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:foreground="?selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/btn_plus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/iransansmobile"
+        android:gravity="center"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        android:tint="@color/primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_add_circle" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:foreground="?selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/btn_Minus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/iransansmobile"
+        android:gravity="center"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        android:tint="@color/primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_min_circle" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/tv_Value"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:background="@color/Transparent"
+        android:fontFamily="@font/iransansmobile"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="6"
+        android:selectAllOnFocus="true"
+        android:text="0"
+        android:textAlignment="center"
+        android:textDirection="inherit"
+        android:textSize="@dimen/material_text_body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_plus"
+        app:layout_constraintStart_toEndOf="@+id/btn_Minus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

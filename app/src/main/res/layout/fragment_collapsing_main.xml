@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.google.android.material.appbar.CollapsingToolbarLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ToolbarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="256dp"
+    android:fitsSystemWindows="true"
+    app:contentScrim="?attr/colorPrimary"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/img_Background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg1"
+        app:layout_collapseMode="pin" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Header"
+            android:textColor="@color/white"
+            android:textSize="@dimen/material_text_body1"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Detail"
+            android:textColor="@color/white"
+            android:textSize="@dimen/material_text_caption"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Header" />
+
+
+        <ImageView
+            android:id="@+id/img_BackgroundCircle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="24dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.875"
+            app:srcCompat="@drawable/bg6" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/img_Logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/appBarLayoutBasket"
+        app:layout_anchorGravity="center"
+        app:srcCompat="@drawable/no_image" />
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:max="100"
+        android:rating="5"
+        android:layout_gravity="bottom|center"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_Info"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_anchor="@+id/appBarLayoutBasket"
+        tools:srcCompat="@drawable/info" />
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/Toolbar_Main"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:visibility="gone"
+                    app:layout_collapseMode="pin">
+                </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.CollapsingToolbarLayout>

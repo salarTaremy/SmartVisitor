@@ -1,0 +1,91 @@
+<resources>
+    <string name="display_size">Default</string>
+
+    <string name="app_name">SmartVisitor</string>
+    <string name="navigation_drawer_open">باز کردن منوی کشویی</string>
+    <string name="navigation_drawer_close">بستن منوی کشویی</string>
+    <string name="nav_header_title">ویزیتور پیش فرض</string>
+    <string name="nav_header_subtitle">App@SmartVisitor.ir</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">تنظیمات</string>
+
+    <string name="menu_home">صفحه اصلی</string>
+    <string name="menu_visitor_info">اطلاعات ویزیتور</string>
+    <string name="menu_device_info">اطلاعات دستگاه</string>
+    <string name="menu_tools"> تنظیمات پایه</string>
+    <string name="menu_app_info">اطلاعات اپلیکیشن</string>
+    <string name="menu_update_app">به روز رسانی اپلیکیشن</string>
+    <string name="ManegeOrders">مدیریت درخواست ها</string>
+    <string name="ManageData">مدیریت داده ها</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="all_customers">همه مشتریان</string>
+    <string name="customers_who_are_close_to_me">مشتریان اطراف من</string>
+    <string name="customer_per_path">مشتریان به تفکیک مسیر</string>
+    <string name="select_customer">انتخاب مشتری</string>
+    <string name="Count">تعداد</string>
+    <string name="Customer">مشتری</string>
+    <string name="CustomerInThePath">مشتری در این مسیر وجود میباشد</string>
+    <string name="PathName">نام مسیر</string>
+    <string name="Path">مسیر</string>
+    <string name="SearchCustomerDetail">بر اساس کد ، نام،ِ نام خانوادگی و یا نام فروشگاه جستجو کنید</string>
+    <string name="SearchCustomer">جستجوی مشتری</string>
+    <string name="NotFound">یافت نشد</string>
+    <string name="NotFoundMessage">جستجو برای عبارت \" param \" هیچ نتیجه ای در بر نداشت</string>
+    <string name="ConfirmAndContinue">تایید و ادامه</string>
+    <string name="TotalSum">جمع کل</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Sum">مجموع</string>
+    <string name="Discount">تخفیف</string>
+    <string name="Tax">مالیات</string>
+    <string name="Day">روز</string>
+    <string name="Rls">ریال</string>
+    <string name="AddNewOrder">ثبت درخواست جدید</string>
+    <string name="AreYouSoureForExit">برای خروج مطمئن هستید ؟</string>
+    <string name="Yes">بلی</string>
+    <string name="No">خیر</string>
+    <string name="ViewCard">مشاهده سبد خرید</string>
+    <string name="OrderDescription">توضیحات سفارش</string>
+    <string name="Returned">مرجوعی</string>
+    <string name="Sale">فروش</string>
+    <string name="OrderType">نوع سفارش</string>
+    <string name="PaymentType">نحوه پرداخت</string>
+    <string name="Cheque">چک</string>
+    <string name="Cash">نقدی</string>
+    <string name="trust">امانی</string>
+    <string name="OtherItem">سایر موارد</string>
+    <string name="FinalConfirm">ثبت نهایی</string>
+    <string name="Success">موفقیت آمیز</string>
+    <string name="OrderSavedsuccessful">سفارش شما با موفقیت ثبت شد</string>
+    <string name="confirm">تایید</string>
+    <string name="ManageOrders">مدیریت درخواست ها</string>
+
+    <string name="Update">به روز رسانی</string>
+    <string name="TotalUpdate">به روز رسانی کلی</string>
+    <string name="TotalUpdateDetail">شامل مشتریان،کالاها،موجودی،اعتبارات و کلیه اطلاعات پایه</string>
+    <string name="AccUpdate">به روز رسانی حساب مشتریان</string>
+    <string name="AccUpdateDetail">به روز رسانی گردش حساب و مانده بدهی مشتریان</string>
+    <string name="OpenInvoiceUpdate">به روز رسانی فاکتورهای باز</string>
+    <string name="OpenInvoiceUpdateDetail">به روز رسانی فاکتورهای فروش و مرجوعی کلیه مشتریان</string>
+    <string name="WarehouseUpdate">به روز رسانی کالا</string>
+    <string name="WarehouseUpdateDetail">به روز رسانی قیمت و موجودی کالاو انبار</string>
+    <string name="StartUpdating">شروع به روز رسانی</string>
+    <string name="Updating">در حال به روز رسانی</string>
+    <string name="IsUpdatingPleaceWait">لطفا شکیبا باشید و تا اتمام عملیات  از برنامه خارج نشوید</string>
+    <string name="UpdateSuccess">عملیات به روز رسانی با موفقیت به اتمام رسید</string>
+    <string name="Cancel">انصراف</string>
+    <string name="ServerNotResponse">پاسخی از سرور دریافت نشد</string>
+    <string name="OrdeSavedInserver">درخواست با شناسه {0} در سیستم ثبت شد</string>
+    <string name="DeleteOrder">حذف درخواست</string>
+    <string name="AreYouSoureToDeleteDarkhast">برای حذف درخواست {0} مطمئن هستید؟</string>
+    <string name="InProgres">درحال انجام</string>
+    <string name="PleaceWait">لطفا کمی صبرکنید</string>
+    <string name="SendFailed">ارسال نا موفق</string>
+    <string name="ErrorInDeleteOrder">حذف درخواست با خطا مواجه شد</string>
+    <string name="CreateOrder">ثبت درخواست</string>
+    <string name="EditOrder">ویرایش درخواست</string>
+    <string name="ErrorInEditOrder">ویرایش درخواست با خطا مواجه شد</string>
+    <string name="ErrorInCreateOrder">ثبت درخواست با خطامواجه شد</string>
+</resources>

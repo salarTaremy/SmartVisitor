@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textSize">@dimen/material_text_menu</item>
+        <item name="android:fontFamily">@font/iransansmobile</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <style name="MyTextView" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/iransansmobile</item>
+    </style>
+    <!--TvBasketRls-->
+    <style name="TvBasketRls" parent="MyTextView">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/material_text_caption</item>
+    </style>
+    <style name="TvBasketRls.Bold" parent="TvBasketRls">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--TvMainItem-->
+    <style name="TvMainItem" parent="MyTextView">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/material_text_body2</item>
+    </style>
+    <style name="TvMainItem.Bold" parent="TvMainItem">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--TvMainItem2-->
+    <style name="TvMainItem2" parent="MyTextView">
+        <item name="android:textColor">@color/grey </item>
+        <item name="android:textSize">@dimen/material_text_caption</item>
+    </style>
+    <style name="TvMainItem2.Bold" parent="TvMainItem2">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--NavigationMenu-->
+    <style name="NavigationMenu" parent="MyTextView">
+        <item name="android:textSize">20sp</item><!-- text size in menu-->
+
+        <!-- item size in menu-->
+        <item name="android:listPreferredItemHeightSmall">40dp</item>
+        <item name="listPreferredItemHeightSmall">40dp</item>
+
+        <!-- item padding left in menu-->
+        <item name="android:listPreferredItemPaddingLeft">8dp</item>
+        <item name="listPreferredItemPaddingLeft">8dp</item>
+
+        <!-- item padding right in menu-->
+        <item name="android:listPreferredItemPaddingRight">8dp</item>
+        <item name="listPreferredItemPaddingRight">8dp</item>
+    </style>
+    <!--MyRadioButton-->
+    <style name="MyRadioButton" parent="RadioButton">
+        <item name="android:textSize">@dimen/material_text_body2</item>
+        <item name="fontFamily">@font/iransansmobile</item>
+    </style>
+    <!--MyButton-->
+    <style name="MyButton" >
+        <item name="android:textSize">@dimen/material_text_button</item>
+        <item name="fontFamily">@font/iransansmobile</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="drawableTint">@color/white</item>
+    </style>
+    <style name="MyCard" parent="CardView" >
+        <item name="cardElevation">5dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+    <style name="MyCheckBox"   >
+        <item name="isw_active_tint_icon_left">@color/white</item>
+        <item name="isw_active_tint_icon_right">@color/deep_orange</item>
+        <item name="isw_background_color">@color/grey</item>
+        <item name="isw_inactive_tint_icon_left">@color/white</item>
+        <item name="isw_inactive_tint_icon_right">@color/grey_dark</item>
+        <item name="isw_thumb_color_left">@color/green</item>
+        <item name="isw_thumb_color_right">@color/pink</item>
+    </style>
+</resources>

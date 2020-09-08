@@ -1,0 +1,353 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayoutUpdate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayoutUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <include layout="@layout/fragment_collapsing_main"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/layout_animation"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_UpdateAll"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/cercle_background_orange"
+                    android:padding="10dp"
+                    android:src="@mipmap/ic_download_cloud"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_updateAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/TotalUpdate"
+                    android:gravity="right"
+                    android:textSize="@dimen/material_text_body1"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/iransansmobile"
+                    app:layout_constraintEnd_toStartOf="@+id/img_UpdateAll"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/tv_updateAllDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/TotalUpdateDetail"
+                    android:gravity="right"
+                    android:textSize="@dimen/material_text_body2"
+                    android:textColor="@color/secondary_text"
+                    android:fontFamily="@font/iransansmobile"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/img_UpdateAll"
+                    app:layout_constraintStart_toEndOf="@+id/sw_SwitchUpdateAll"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_updateAll" />
+
+                <com.polyak.iconswitch.IconSwitch
+                    android:id="@+id/sw_SwitchUpdateAll"
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    app:isw_icon_left="@mipmap/ic_download"
+                    app:isw_icon_right="@mipmap/ic_block"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_ProductName"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_UpdateAcc"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/cercle_background_orange"
+                    android:padding="10dp"
+                    android:src="@mipmap/ic_download_cloud"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_updateAcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/AccUpdate"
+                    android:gravity="right"
+                    android:textSize="@dimen/material_text_body1"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/iransansmobile"
+                    app:layout_constraintEnd_toStartOf="@+id/img_UpdateAcc"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/tv_updateAccDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/AccUpdateDetail"
+                    android:gravity="right"
+                    android:textSize="@dimen/material_text_body2"
+                    android:textColor="@color/secondary_text"
+                    android:fontFamily="@font/iransansmobile"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/img_UpdateAcc"
+                    app:layout_constraintStart_toEndOf="@+id/sw_SwitchUpdateAcc"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_updateAcc" />
+
+                <com.polyak.iconswitch.IconSwitch
+                    android:id="@+id/sw_SwitchUpdateAcc"
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    app:isw_icon_left="@mipmap/ic_download"
+                    app:isw_icon_right="@mipmap/ic_block"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_ProductName"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_UpdateOpenInvoice"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/cercle_background_orange"
+                    android:padding="10dp"
+                    android:src="@mipmap/ic_download_cloud"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_updateOpenInvoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/OpenInvoiceUpdate"
+                    android:gravity="right"
+                    android:textSize="@dimen/material_text_body1"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/iransansmobile"
+                    app:layout_constraintEnd_toStartOf="@+id/img_UpdateOpenInvoice"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/tv_updateOpenInvoiceDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/OpenInvoiceUpdateDetail"
+                    android:gravity="right"
+                    android:textSize="@dimen/material_text_body2"
+                    android:textColor="@color/secondary_text"
+                    android:fontFamily="@font/iransansmobile"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/img_UpdateOpenInvoice"
+                    app:layout_constraintStart_toEndOf="@+id/sw_SwitchUpdateOpenInvoice"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_updateOpenInvoice" />
+
+                <com.polyak.iconswitch.IconSwitch
+                    android:id="@+id/sw_SwitchUpdateOpenInvoice"
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    app:isw_icon_left="@mipmap/ic_download"
+                    app:isw_icon_right="@mipmap/ic_block"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_ProductName"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_UpdateWarehouse"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/cercle_background_orange"
+                    android:padding="10dp"
+                    android:src="@mipmap/ic_download_cloud"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_updateWarehouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/WarehouseUpdate"
+                    android:gravity="right"
+                    android:textSize="@dimen/material_text_body1"
+                    android:textColor="@color/primary_text"
+                    android:fontFamily="@font/iransansmobile"
+                    app:layout_constraintEnd_toStartOf="@+id/img_UpdateWarehouse"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/tv_updateWarehouseDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/WarehouseUpdateDetail"
+                    android:gravity="right"
+                    android:textSize="@dimen/material_text_body2"
+                    android:textColor="@color/secondary_text"
+                    android:fontFamily="@font/iransansmobile"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/img_UpdateWarehouse"
+                    app:layout_constraintStart_toEndOf="@+id/sw_SwitchUpdateWarehouse"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_updateWarehouse" />
+
+                <com.polyak.iconswitch.IconSwitch
+                    android:id="@+id/sw_SwitchUpdateWarehouse"
+                    style="@style/MyCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    app:isw_icon_left="@mipmap/ic_download"
+                    app:isw_icon_right="@mipmap/ic_block"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_ProductName"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/BtnSheetContinueUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:behavior_hideable="false"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <com.omega_r.libs.OmegaCenterIconButton
+            android:id="@+id/BtnConfirmContinueUpdate"
+            android:drawableLeft="@mipmap/ic_download"
+            style="@style/MyButton"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@color/accent"
+            android:fontFamily="@font/iransansmobile"
+            android:text="@string/StartUpdating" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

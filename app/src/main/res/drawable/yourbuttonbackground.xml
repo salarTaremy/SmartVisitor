@@ -1,0 +1,84 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+
+        android:drawable="@drawable/ic_menu_camera"
+        android:state_checked="true"
+        android:state_pressed="true" >
+        <shape
+            android:shape="rectangle" >
+            <corners
+                android:radius="5dp" />
+            <solid
+                android:color="@color/Transparent" />
+            <stroke
+                android:width="2dp"
+                android:color="#555555" />
+            <padding
+                android:bottom="0dp"
+                android:top="0dp"
+                android:left="0dp"
+                android:right="0dp"
+                />
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/info"
+        android:state_pressed="true" >
+        <shape
+            android:shape="rectangle" >
+            <corners
+                android:radius="5dp" />
+            <solid
+                android:color="@color/Transparent" />
+            <stroke
+                android:width="5dp"
+                android:color="@color/accent" />
+            <padding
+                android:bottom="0dp"
+                android:top="0dp"
+                android:left="0dp"
+                android:right="0dp"
+                />
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/info"
+        android:state_checked="true" >
+        <shape
+            android:shape="rectangle" >
+            <corners
+                android:radius="5dp" />
+            <solid
+                android:color="@color/Transparent" />
+            <stroke
+                android:width="5dp"
+                android:color="@color/accent" />
+            <padding
+                android:bottom="5dp"
+                android:top="5dp"
+                android:left="5dp"
+                android:right="5dp"
+                />
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/ic_menu_camera" >
+        <shape
+            android:shape="rectangle" >
+            <corners
+                android:radius="5dp" />
+            <solid
+                android:color="@color/Transparent" />
+            <stroke
+                android:width="2dp"
+                android:color="#555555" />
+            <padding
+                android:bottom="0dp"
+                android:top="0dp"
+                android:left="0dp"
+                android:right="0dp"
+                />
+        </shape>
+    </item>
+
+</selector>
