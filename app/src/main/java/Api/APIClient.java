@@ -8,6 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class APIClient {
 
     private static Retrofit retrofit = null;
+
     private static String Ip = "94.101.128.139";
     private static String Port = "100";
     public static Retrofit getClient() {
